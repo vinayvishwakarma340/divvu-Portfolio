@@ -86,23 +86,23 @@ const index = () => {
 
         {/* <!-- Open Graph / Facebook --> */}
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://divyansh619.netlify.app/" />
+        <meta property="og:url" content="https://vinay-profile.vercel.app/" />
         <meta property="og:title" content="Vinay Vishwakarma - Portfolio" />
         <meta
           property="og:description"
           content="This is a portfolio which tells all the details about me"
         />
-        <link rel="canonical" href="https://divyansh619.netlify.app/" />
+        <link rel="canonical" href="https://vinay-profile.vercel.app/" />
         <meta
           property="og:image"
-          content="https://divyansh619.netlify.app/family.webp"
+          content="https://vinay-profile.vercel.app/Vinay.png"
         />
 
         {/* <!-- Twitter --> */}
         <meta property="twitter:card" content="summary_large_image" />
         <meta
           property="twitter:url"
-          content="https://divyansh619.netlify.app/"
+          content="https://vinay-profile.vercel.app/"
         />
         <meta
           property="twitter:title"
@@ -114,7 +114,7 @@ const index = () => {
         />
         <meta
           property="twitter:image"
-          content="https://divyansh619.netlify.app/family.webp"
+          content="https://vinay-profile.vercel.app/Vinay.png"
         />
       </Head>
 
