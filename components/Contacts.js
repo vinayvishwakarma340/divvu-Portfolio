@@ -59,9 +59,9 @@ const Contacts = () => {
                 <div className="mt-6">
                   <a
                     class=" text-base font-medium text-white"
-                    href={`tel:${+91 - 7007011378}`}
+                    href={`tel:${+91 - 9935851285}`}
                   >
-                    +91-7007011378
+                    +91-9935851285
                   </a>
                 </div>
 
@@ -76,10 +76,10 @@ const Contacts = () => {
                 <img src={"/gmail.png"} height={45} width={45} />
                 <p class="mt-6   text-base font-medium text-white">
                   <a
-                    href="mailto:divyanshsingh619@gmail.com"
+                    href="mailto:vinay.myjob@gmail.com"
                     class="underline max-w-full break-all"
                   >
-                    divyanshsingh619@gmail.com
+                    vinay.myjob@gmail.com
                   </a>
                 </p>
                 {/* <!-- <p class="mt-1 text-sm font-medium text-white">
@@ -94,7 +94,7 @@ const Contacts = () => {
               <div class="p-6">
                 <img src={"/location.png"} height={40} width={40} />
                 <p class="mt-6  font-medium leading-relaxed text-white">
-                  Civil Lines, Sultanpur
+                  Lucknow, India - 226002
                 </p>
               </div>
             </div>

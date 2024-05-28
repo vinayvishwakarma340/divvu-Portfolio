@@ -19,7 +19,7 @@ const index = () => {
     },
     {
       id: 2,
-      name: "Resume",
+      name: "Education",
       img: "/resume.png",
     },
     {
@@ -46,7 +46,7 @@ const index = () => {
           <Work />
         </div>
       );
-    } else if (val === "Resume") {
+    } else if (val === "Education") {
       return (
         <div>
           <Resume />
@@ -77,8 +77,8 @@ const index = () => {
     <>
       <Head>
         {/* <!-- Primary Meta Tags --> */}
-        <title>Divyansh Singh - Portfolio</title>
-        <meta name="title" content="Divyansh Singh - Portfolio" />
+        <title>Vinay Vishwakarma - Portfolio</title>
+        <meta name="title" content="Vinay Vishwakarma - Portfolio" />
         <meta
           name="description"
           content="This is a portfolio which tells all the details about me"
@@ -87,12 +87,12 @@ const index = () => {
         {/* <!-- Open Graph / Facebook --> */}
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://divyansh619.netlify.app/" />
-        <meta property="og:title" content="Divyansh Singh - Portfolio" />
+        <meta property="og:title" content="Vinay Vishwakarma - Portfolio" />
         <meta
           property="og:description"
           content="This is a portfolio which tells all the details about me"
         />
-        <link rel='canonical' href='https://divyansh619.netlify.app/' />
+        <link rel="canonical" href="https://divyansh619.netlify.app/" />
         <meta
           property="og:image"
           content="https://divyansh619.netlify.app/family.webp"
@@ -104,7 +104,10 @@ const index = () => {
           property="twitter:url"
           content="https://divyansh619.netlify.app/"
         />
-        <meta property="twitter:title" content="Divyansh Singh - Portfolio" />
+        <meta
+          property="twitter:title"
+          content="Vinay Vishwakarma - Portfolio"
+        />
         <meta
           property="twitter:description"
           content="This is a portfolio which tells all the details about me"
@@ -113,22 +116,19 @@ const index = () => {
           property="twitter:image"
           content="https://divyansh619.netlify.app/family.webp"
         />
-
-     
       </Head>
 
-
-      <div className="bg-gradient-to-r from-[#ef745c] to-[#34073d]">
-        <div className="grid md:grid-cols-5">
+      <div className=" p-6 bg-gradient-to-r from-[#ef745c] to-[#34073d]">
+        <div className="container m-auto grid md:grid-cols-5 gap-6 relative">
           {/* #Left_Section */}
-          <div className="md:col-span-2">
+          <div className="md:col-span-2 ">
             <Profile />
           </div>
 
           {/* #Right_Section */}
           <div className="md:col-span-3">
             {/* #Toggling_Section */}
-            <div className="hidden md:flex md:flex-wrap md:justify-center   md:m-8 md:rounded-2xl md:bg-black md:p-4">
+            <div className="hidden md:flex md:flex-wrap md:justify-center  md:rounded-2xl md:bg-black md:p-4  mb-6">
               {section?.map((item) => (
                 <div
                   key={item.id}
@@ -150,14 +150,14 @@ const index = () => {
             </div>
 
             {/* #Mobile */}
-            <div className="md:hidden m-2 grid grid-cols-3 gap-2">
+            <div className="md:hidden m-2 flex flex-wrap gap-2">
               {section.map((item) => {
                 return (
                   <button
                     key={item.name}
                     className={`py-2 w-28 px-4   rounded-lg ${
                       selectedSection === item.name
-                        ? "text-white bg-gradient-to-r from-[#ff0f7b] to-[#f89b29] text-white"
+                        ? "text-white bg-gradient-to-r from-[#ff0f7b] to-[#f89b29] "
                         : "bg-gray-900 text-white"
                     }`}
                     onClick={() => setSelectedSection(item.name)}

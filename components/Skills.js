@@ -38,12 +38,6 @@ const Skills = () => {
       bar: "80%",
       color: "from-red-400 to-pink-500",
     },
-    {
-      id: 7,
-      name: "Shopify",
-      bar: "70%",
-      color: "from-green-400 to-yellow-500",
-    },
   ];
 
   const skillshave = [
@@ -113,7 +107,7 @@ const Skills = () => {
       type: "design",
       logo: "/skill/responsive.png",
     },
-   
+
     {
       id: 13,
       name: "SEO",
@@ -126,7 +120,7 @@ const Skills = () => {
       type: "Methodology",
       logo: "/skill/agile.png",
     },
-    
+
     {
       id: 15,
       name: "RESTful APIs",
@@ -157,12 +151,7 @@ const Skills = () => {
       type: "Methodology",
       logo: "/skill/agile.png",
     },
-    {
-      id: 14,
-      name: "Shopify",
-      type: "Methodology",
-      logo: "/skill/agile.png",
-    },
+
     {
       id: 14,
       name: "Server Side Rendering",

@@ -1,4 +1,5 @@
 import React from "react";
+import Skills from "./Skills";
 
 const Home = () => {
   const projects = [
@@ -42,7 +43,7 @@ const Home = () => {
   const duplicatedProjects = [...projects, ...projects];
 
   return (
-    <div className="sm:m-8 m-2">
+    <div className="">
       <section class="py-10 bg-black sm:py-16 lg:py-24 rounded-2xl">
         <div class="max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">
           <div class="max-w-2xl mx-start text-start relative">
@@ -123,6 +124,9 @@ const Home = () => {
               </div>
             </div>
           </div> */}
+          <div className="my-6">
+            <Skills />
+          </div>
           <div className="hidden md:block">
             <div className="mt-12 marquee-container py-12 rounded-lg bg-zinc-50">
               <div className="marquee ">

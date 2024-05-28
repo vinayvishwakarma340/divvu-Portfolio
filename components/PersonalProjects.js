@@ -69,7 +69,7 @@ const PersonalProjects = () => {
     },
   ];
   return (
-    <section className="py-10 m-2 md:m-8 rounded-2xl bg-black text-white    ">
+    <section className="py-10 rounded-2xl bg-black text-white    ">
       <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
         <div className="max-w-2xl mx-auto text-center relative">
           <h2 className="text-3xl font-bold leading-tight sm:text-4xl">
