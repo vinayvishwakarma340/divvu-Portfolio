@@ -118,7 +118,7 @@ const index = () => {
         />
       </Head>
 
-      <div className=" p-6 bg-gradient-to-r from-[#ef745c] to-[#34073d]">
+      <div className=" p-4 sm:p-6 bg-gradient-to-r from-[#ef745c] to-[#34073d]">
         <div className="container m-auto grid md:grid-cols-5 gap-6 relative">
           {/* #Left_Section */}
           <div className="md:col-span-2 ">
@@ -150,7 +150,7 @@ const index = () => {
             </div>
 
             {/* #Mobile */}
-            <div className="md:hidden m-2 flex flex-wrap gap-2">
+            <div className="md:hidden mb-6 flex flex-wrap gap-2">
               {section.map((item) => {
                 return (
                   <button
