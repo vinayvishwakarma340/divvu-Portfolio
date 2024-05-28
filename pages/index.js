@@ -150,7 +150,26 @@ const index = () => {
             </div>
 
             {/* #Mobile */}
-            <div className="overflow-scroll fixed left-0 bottom-0 py-2 z-50 shadow-xl  bg-white ">
+            <div className="overflow-scroll fixed left-0 bottom-0 py-2 z-50  w-full bg-black shadow-[rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px] border-t-2 ">
+              <div className="md:hidden flex justify-evenly  ">
+                {section.map((item) => {
+                  return (
+                    <div
+                      key={item.name}
+                      className={`py-2   rounded-lg ${
+                        selectedSection === item.name
+                          ? " text-white"
+                          : " text-white"
+                      }`}
+                      onClick={() => setSelectedSection(item.name)}
+                    >
+                      {item.name}
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+            {/* <div className="overflow-scroll fixed left-0 bottom-0 py-2 z-50 shadow-xl  bg-white ">
               <div className="md:hidden flex gap-2  ">
                 {section.map((item) => {
                   return (
@@ -168,7 +187,7 @@ const index = () => {
                   );
                 })}
               </div>
-            </div>
+            </div> */}
 
             {/* #Box */}
             <div>{selectedpart(selectedSection)}</div>
