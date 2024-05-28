@@ -150,22 +150,24 @@ const index = () => {
             </div>
 
             {/* #Mobile */}
-            <div className="md:hidden mb-6 flex flex-wrap gap-2">
-              {section.map((item) => {
-                return (
-                  <button
-                    key={item.name}
-                    className={`py-2 w-28 px-4   rounded-lg ${
-                      selectedSection === item.name
-                        ? "text-white bg-gradient-to-r from-[#ff0f7b] to-[#f89b29] "
-                        : "bg-gray-900 text-white"
-                    }`}
-                    onClick={() => setSelectedSection(item.name)}
-                  >
-                    {item.name}
-                  </button>
-                );
-              })}
+            <div className="overflow-scroll fixed left-0 bottom-0 py-2 z-50 shadow-xl  bg-white ">
+              <div className="md:hidden flex gap-2  ">
+                {section.map((item) => {
+                  return (
+                    <button
+                      key={item.name}
+                      className={`py-2 w-28 px-4   rounded-lg ${
+                        selectedSection === item.name
+                          ? "text-white bg-gradient-to-r from-[#ff0f7b] to-[#f89b29] "
+                          : "bg-gray-900 text-white"
+                      }`}
+                      onClick={() => setSelectedSection(item.name)}
+                    >
+                      {item.name}
+                    </button>
+                  );
+                })}
+              </div>
             </div>
 
             {/* #Box */}
