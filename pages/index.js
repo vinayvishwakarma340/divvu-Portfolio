@@ -95,7 +95,7 @@ const index = () => {
         <link rel="canonical" href="https://vinay-profile.vercel.app/" />
         <meta
           property="og:image"
-          content="https://vinay-profile.vercel.app/og-vinay.jpg"
+          content="https://vinay-profile.vercel.app/vinay-og.webp"
         />
 
         {/* <!-- Twitter --> */}
@@ -114,7 +114,7 @@ const index = () => {
         />
         <meta
           property="twitter:image"
-          content="https://vinay-profile.vercel.app/og-vinay.jpg"
+          content="https://vinay-profile.vercel.app/vinay-og.webp"
         />
       </Head>
 
