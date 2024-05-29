@@ -3,16 +3,6 @@ import { useRouter } from "next/router";
 import React, { useEffect, useRef, useState } from "react";
 
 const index = () => {
-  const educationRef = useRef();
-  const router = useRouter();
-  useEffect(() => {
-    if (router.asPath === "/education") {
-      educationRef.current.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
-    }
-  }, []);
   const educationdata = [
     {
       id: 1,
@@ -191,14 +181,14 @@ const index = () => {
         {/* #Box */}
         <section class="bg-black  rounded-2xl text-white">
           <div class="mx-auto max-w-screen-xl px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8">
-            <div class="max-w-2xl mx-start text-start relative">
+            <div class="max-w-2xl mx-start text-center relative">
               <h2 class="text-3xl font-bold leading-tight text-white sm:text-4xl">
                 Resume
               </h2>
-              <div class="  w-1/4 h-0.5 bottom-0 left-0 bg-gradient-to-r from-purple-500 to-pink-500"></div>
+              <div class="m-auto  w-1/4 h-0.5 bottom-0 left-0 bg-gradient-to-r from-purple-500 to-pink-500"></div>
             </div>
 
-            <div className="" ref={educationRef}>
+            <div className="">
               <div>
                 <div className="flex items-center mb-4">
                   <span className="text-xl font-bold mt-6 mr-2">Education</span>

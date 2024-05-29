@@ -8,16 +8,8 @@ const Contacts = () => {
 
   const [openModal, setOpenModal] = useState(false);
   const [message, setMessage] = useState("");
-  const contactRef = useRef();
-  const router = useRouter();
-  useEffect(() => {
-    if (router.asPath === "/contact") {
-      contactRef.current.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
-    }
-  }, []);
+  useRouter();
+
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -56,17 +48,14 @@ const Contacts = () => {
     <section class="py-10 bg-black mt-2 md:mt-8 rounded-2xl ">
       <div class="px-4 mx-auto sm:px-6 base:px-8 max-w-7xl">
         <div class="max-w-2xl mx-start text-start relative">
-          <h2
-            class="text-3xl font-bold leading-tight text-white sm:text-4xl"
-            ref={contactRef}
-          >
+          <h2 class="text-3xl font-bold leading-tight text-white sm:text-4xl">
             Contact me
           </h2>
           <div class="  w-1/4 h-0.5 bottom-0 left-0 bg-gradient-to-r from-purple-500 to-pink-500"></div>
         </div>
 
         <div class="max-w-5xl mx-auto mt-12 sm:mt-16">
-          <div class="grid grid-cols-1 gap-6 px-4 sm:px-8 md:px-0 md:grid-cols-3">
+          <div class="grid grid-cols-1 gap-6  sm:px-8 md:px-0 md:grid-cols-3">
             <div class="overflow-hidden border border-pink-500 bg-gray-900 rounded-xl">
               <div class="p-6">
                 <img src={"/call.png"} height={40} width={40} />

@@ -187,7 +187,7 @@ const Skills = () => {
   return (
     <div className="grid grid-cols-1  md:grid-cols-2 gap-4 bg-black text-white">
       {/* Skills column */}
-      <div className="p-4">
+      <div className="py-4">
         <div class="max-w-2xl mx-start text-start relative">
           <h2 class="text-3xl font-bold leading-tight text-white sm:text-4xl">
             Skills
@@ -213,21 +213,22 @@ const Skills = () => {
       </div>
 
       {/* Knowledge column */}
-      <div className="p-4">
+      <div className="py-4">
         <div className="max-w-2xl mx-start text-start relative">
           <h2 className="text-3xl font-bold leading-tight text-white sm:text-4xl">
             Knowledge
           </h2>
-          <div className="w-1/4 h-0.5 bottom-0 left-0 bg-gradient-to-r from-purple-500 to-pink-500"></div>
+          <div className="w-1/4  bottom-0 left-0 bg-gradient-to-r from-purple-500 to-pink-500"></div>
         </div>
-        <div>
+        <div className="flex flex-wrap gap-4 mt-6">
           {skillshave.map((item) => {
             return (
-              <button key={item.id} className="mt-6 mx-2">
-                <span className="whitespace-nowrap rounded-lg   px-3 py-2 text-sm text-white border hover:border-yellow-400 border-[#e3436b]">
-                  {item.name}
-                </span>
-              </button>
+              <div
+                key={item.id}
+                className=" rounded-lg   px-3 py-2 text-sm text-white border hover:border-yellow-400 border-[#e3436b]"
+              >
+                {item.name}
+              </div>
             );
           })}
         </div>

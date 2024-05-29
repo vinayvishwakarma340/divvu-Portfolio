@@ -46,7 +46,7 @@ const Home = () => {
   return (
     <div className="">
       <section class="p-6 bg-black  rounded-2xl">
-        <div class="max-w-5xl px-4 mx-auto ">
+        <div class="max-w-5xl  mx-auto ">
           <div class=" mx-start text-start relative">
             <Heading text={"About me"} />
             <div class="  w-1/5 h-0.5 bottom-0 left-0 bg-gradient-to-r from-purple-500 to-pink-500"></div>
