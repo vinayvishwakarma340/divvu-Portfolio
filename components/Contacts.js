@@ -1,12 +1,23 @@
 import React, { useEffect, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import Modal from "./Modal";
+import { useRouter } from "next/router";
 
 const Contacts = () => {
   const form = useRef();
+
   const [openModal, setOpenModal] = useState(false);
   const [message, setMessage] = useState("");
-
+  const contactRef = useRef();
+  const router = useRouter();
+  useEffect(() => {
+    if (router.asPath === "/contact") {
+      contactRef.current.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  }, []);
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -45,7 +56,10 @@ const Contacts = () => {
     <section class="py-10 bg-black mt-2 md:mt-8 rounded-2xl ">
       <div class="px-4 mx-auto sm:px-6 base:px-8 max-w-7xl">
         <div class="max-w-2xl mx-start text-start relative">
-          <h2 class="text-3xl font-bold leading-tight text-white sm:text-4xl">
+          <h2
+            class="text-3xl font-bold leading-tight text-white sm:text-4xl"
+            ref={contactRef}
+          >
             Contact me
           </h2>
           <div class="  w-1/4 h-0.5 bottom-0 left-0 bg-gradient-to-r from-purple-500 to-pink-500"></div>

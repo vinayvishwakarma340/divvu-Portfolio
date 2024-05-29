@@ -1,7 +1,18 @@
 import Image from "next/image";
-import React from "react";
+import { useRouter } from "next/router";
+import React, { useEffect, useRef } from "react";
 
 const PersonalProjects = () => {
+  const projectRef = useRef();
+  const router = useRouter();
+  useEffect(() => {
+    if (router.asPath === "/project") {
+      projectRef.current.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  }, []);
   const liveproject = [
     {
       name: "Times Ascent",
@@ -57,7 +68,10 @@ const PersonalProjects = () => {
     <section className="py-10 rounded-2xl bg-black text-white    ">
       <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
         <div className="max-w-2xl mx-auto text-center relative">
-          <h2 className="text-3xl font-bold leading-tight sm:text-4xl">
+          <h2
+            className="text-3xl font-bold leading-tight sm:text-4xl"
+            ref={projectRef}
+          >
             My Live Projects
           </h2>
           <div className="w-1/4 h-0.5 mt-3 mx-auto bg-gradient-to-r from-purple-500 to-pink-500"></div>

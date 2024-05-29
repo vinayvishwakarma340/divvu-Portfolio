@@ -251,14 +251,14 @@ const Layout = (props) => {
                     key={item.name}
                     href={item.href}
                     className={`py-2 text-center  rounded-lg ${
-                      asPath === item.href ? "text-teal-400 " : " text-white"
+                      asPath === item.href ? "text-[#ef745c] " : " text-white"
                     }`}
                   >
                     <div className="mb-1">
                       <item.icon
                         className={`m-auto ${
                           asPath === item.href
-                            ? "  text-teal-400"
+                            ? "  text-[#ef745c]"
                             : " text-white"
                         }`}
                       />

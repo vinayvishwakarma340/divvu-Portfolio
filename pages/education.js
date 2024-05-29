@@ -1,8 +1,18 @@
 import Image from "next/image";
-import React, { useEffect, useState } from "react";
+import { useRouter } from "next/router";
+import React, { useEffect, useRef, useState } from "react";
 
 const index = () => {
-  const [selectedSection, setSelectedSection] = useState("Home");
+  const educationRef = useRef();
+  const router = useRouter();
+  useEffect(() => {
+    if (router.asPath === "/education") {
+      educationRef.current.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  }, []);
   const educationdata = [
     {
       id: 1,
@@ -188,7 +198,7 @@ const index = () => {
               <div class="  w-1/4 h-0.5 bottom-0 left-0 bg-gradient-to-r from-purple-500 to-pink-500"></div>
             </div>
 
-            <div className="">
+            <div className="" ref={educationRef}>
               <div>
                 <div className="flex items-center mb-4">
                   <span className="text-xl font-bold mt-6 mr-2">Education</span>
