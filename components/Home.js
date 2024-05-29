@@ -1,5 +1,6 @@
 import React from "react";
 import Skills from "./Skills";
+import Heading from "./Heading";
 
 const Home = () => {
   const projects = [
@@ -44,22 +45,31 @@ const Home = () => {
 
   return (
     <div className="">
-      <section class="py-10 bg-black sm:py-16 lg:py-24 rounded-2xl">
-        <div class="max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">
-          <div class="max-w-2xl mx-start text-start relative">
-            <h2 class="text-3xl font-bold leading-tight text-white sm:text-4xl">
-              About Me
-            </h2>
-            <div class="  w-1/4 h-0.5 bottom-0 left-0 bg-gradient-to-r from-purple-500 to-pink-500"></div>
-            <p class="max-w-xl mx-start mt-4 text-base leading-relaxed text-gray-300">
-              As a passionate React developer with expertise in Next.js,
-              Tailwind CSS, and HTML, I craft beautiful and user-friendly web
-              applications. With a focus on seamless user experiences and
-              responsive design, I enjoy turning complex problems into elegant
-              solutions. My creativity extends to UI/UX, and I thrive in
-              collaborative environments where I can contribute my technical
-              skills and excellent communication. Let's build something amazing
-              together!
+      <section class="p-6 bg-black  rounded-2xl">
+        <div class="max-w-5xl px-4 mx-auto ">
+          <div class=" mx-start text-start relative">
+            <Heading text={"About me"} />
+            <div class="  w-1/5 h-0.5 bottom-0 left-0 bg-gradient-to-r from-purple-500 to-pink-500"></div>
+            <p class="  mt-4 text-base leading-relaxed text-gray-300">
+              As a Full Stack Developer at SASONE PVT LTD with over 2.5 years of
+              experience in web development, I bring a strong background in both
+              frontend and backend technologies, including React.js, Next.js,
+              Python, MySQL and AWS. I excel in fast-paced environments,
+              demonstrating the ability to complete tasks efficiently with
+              minimal guidance. My goal is to continuously enhance my skills
+              across various computer science disciplines, aiming to become a
+              versatile asset in my future career endeavors. I am a motivated IT
+              professional with a robust work ethic, seeking a challenging role
+              that aligns with my skills and educational background. Known for
+              my enthusiasm and determination, I am eager to absorb new
+              concepts, methods, and technologies. As an exceptional team player
+              with leadership capabilities, I aim to contribute significantly to
+              any project or team I join. Key Highlights: - 2.5+ years of
+              comprehensive experience in frontend development, including 1 year
+              dedicated to React.js, alongside proficiency in Next.js, Python,
+              and MySQL. - Proven track record as an SEO Analyst for 1 year,
+              enhancing my expertise in UI/UX design principles alongside my web
+              development skills.
             </p>
           </div>
 

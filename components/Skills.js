@@ -5,7 +5,7 @@ const Skills = () => {
     {
       id: 1,
       name: "Next.js",
-      bar: "70%",
+      bar: "65%",
       color: "from-green-400 to-blue-500",
     },
     {
@@ -16,20 +16,20 @@ const Skills = () => {
     },
     {
       id: 3,
-      name: "React Native",
-      bar: "70%",
+      name: "Redux",
+      bar: "60%",
       color: "from-pink-400 to-blue-500",
     },
     {
       id: 4,
       name: "JavaScript",
-      bar: "65%",
+      bar: "75%",
       color: "from-yellow-300 to-orange-400",
     },
     {
       id: 5,
       name: "CSS3",
-      bar: "80%",
+      bar: "70%",
       color: "from-blue-400 to-indigo-500",
     },
     {
@@ -37,6 +37,24 @@ const Skills = () => {
       name: "HTML5",
       bar: "80%",
       color: "from-red-400 to-pink-500",
+    },
+    {
+      id: 9,
+      name: "Node.js",
+      bar: "50%",
+      color: "from-green-600 to-teal-400",
+    },
+    {
+      id: 7,
+      name: "AWS Basic",
+      bar: "30%",
+      color: "from-orange-600 to-pink-300",
+    },
+    {
+      id: 8,
+      name: "My SQL",
+      bar: "40%",
+      color: "from-blue-700 to-lemon-500",
     },
   ];
 

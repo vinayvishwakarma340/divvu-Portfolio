@@ -42,7 +42,7 @@ const Contacts = () => {
   }, []);
 
   return (
-    <section class="py-10 bg-black m-2 md:m-8 rounded-2xl ">
+    <section class="py-10 bg-black mt-2 md:mt-8 rounded-2xl ">
       <div class="px-4 mx-auto sm:px-6 base:px-8 max-w-7xl">
         <div class="max-w-2xl mx-start text-start relative">
           <h2 class="text-3xl font-bold leading-tight text-white sm:text-4xl">

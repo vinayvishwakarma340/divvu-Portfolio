@@ -4,7 +4,7 @@ import React from "react";
 const PersonalProjects = () => {
   const liveproject = [
     {
-      name: "TimesAscent",
+      name: "Times Ascent",
       id: 1,
       description:
         "TimesAscent, a leading platform in the job market landscape, is dedicated to delivering unparalleled job opportunities and career-centric content to professionals across diverse industries and job functions. With a commitment to excellence, the website curates a vast array of job listings from esteemed companies and organizations, positioning itself as a paramount resource for individuals aspiring to advance their careers or explore new and rewarding job prospects.",
@@ -12,12 +12,12 @@ const PersonalProjects = () => {
       href: "https://timesascent.com/",
     },
     {
-      name: "RozgaarIndia",
+      name: "Education Times",
       id: 2,
       description:
-        "Rozgaar India is a distinguished and cutting-edge online multi-industry freelance job portal. Designed to bridge the gap between employers and freelance job seekers, this platform serves as an efficient marketplace for connecting talent with opportunities. Whether seeking short-term projects or long-term contracts, Rozgaar India provides a seamless avenue for freelancers to showcase their skills and for companies to hire remote talent for a wide range of tasks.",
-      logo: "/Rozgaar.svg",
-      href: "https://www.rozgaarindia.com/",
+        "Part of Times of India focused on education platform for articles, exams, counsellors, colleges, study abroad, coaching, Q&A and events.Education Times is the leading platform that empowers students and parents with all-encompassing information for education. Just as a compass guides sailors through the vast sea, Education Times navigates them through the ever-changing world of learning, ensuring they reach their destination of academic and professional success. Education Times is their trusted companion on the journey of education and growth.",
+      logo: "https://www.educationtimes.com/newLogo.webp",
+      href: "https://www.educationtimes.com/",
     },
     {
       name: "StockOne",
@@ -43,22 +43,7 @@ const PersonalProjects = () => {
       logo: "/saslogo.svg",
       href: "https://www.sasone.in/",
     },
-    {
-      name: "Admin",
-      id: 6,
-      description:
-        " The purpose of this admin panel is to empower administrators with the necessary tools and functionalities to ensure the seamless functioning, robust security, and optimal user experience across all associated websites. The admin's responsibility will encompass managing diverse technical aspects while upholding content relevancy and currency for the benefit of website visitors.",
-      logo: "",
-      href: "https://admin.sashyundai.com/",
-    },
-    {
-      name: "SASXTRA",
-      id: 7,
-      description:
-        "Explore a vast selection of genuine Hyundai and other car brands accessories at SAS Xtra. Elevate your driving experience with premium-quality products, hassle-free returns, and comfort payments.",
-      logo: "/sasxtra.svg",
-      href: "https://www.sasxtra.com//",
-    },
+
     {
       name: "ONEPOST",
       id: 8,
@@ -78,7 +63,7 @@ const PersonalProjects = () => {
           <div className="w-1/4 h-0.5 mt-3 mx-auto bg-gradient-to-r from-purple-500 to-pink-500"></div>
         </div>
 
-        <div className="grid  max-w-md grid-cols-1 gap-6 mt-8 lg:mt-16 lg:grid-cols-2 lg:max-w-full lg:gap-14">
+        <div className="grid  max-w-md grid-cols-1 gap-6 mt-8 lg:mt-16 lg:grid-cols-2 lg:max-w-full ">
           {liveproject.map((item) => {
             return (
               <div
