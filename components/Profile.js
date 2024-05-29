@@ -33,7 +33,7 @@ const Profile = () => {
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="flex justify-center">
           {/* Profile Picture */}
-          <div className="relative h-60 w-60 overflow-hidden rounded-full shadow-lg">
+          <div className="relative h-60 w-60 overflow-hidden rounded-full shadow-lg ">
             <Image
               src="/Vinay.png"
               alt="Vinay Vishwakarma Profile Picture"
