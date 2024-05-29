@@ -213,7 +213,7 @@ const Layout = (props) => {
         </div>
       </>
 
-      <div className=" p-4 sm:p-6 bg-gradient-to-r from-[#ef745c] to-[#34073d] mb-8">
+      <div className=" p-4 sm:p-6 bg-gradient-to-r from-[#ef745c] to-[#34073d] pb-20">
         <div className="container m-auto grid md:grid-cols-5 gap-6 relative">
           <div
             className={`md:col-span-2 ${
