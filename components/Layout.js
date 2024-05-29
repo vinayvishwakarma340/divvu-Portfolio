@@ -247,20 +247,24 @@ const Layout = (props) => {
             <div className=" flex justify-around  ">
               {section.map((item) => {
                 return (
-                  <div
+                  <Link
                     key={item.name}
+                    href={item.href}
                     className={`py-2 text-center  rounded-lg ${
-                      selectedSection === item.name
-                        ? " text-white"
-                        : " text-white"
+                      asPath === item.href ? "text-teal-400 " : " text-white"
                     }`}
-                    onClick={() => setSelectedSection(item.name)}
                   >
                     <div className="mb-1">
-                      <item.icon className="m-auto" />
+                      <item.icon
+                        className={`m-auto ${
+                          asPath === item.href
+                            ? "  text-teal-400"
+                            : " text-white"
+                        }`}
+                      />
                     </div>
                     <div className="text-[12px]">{item.name}</div>
-                  </div>
+                  </Link>
                 );
               })}
             </div>
